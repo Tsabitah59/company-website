@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Your Work || SkySpace</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="shortcut icon" href="assets/app/Group 6.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="assets/app/Group 5.png" alt="">
+          <i class='bx bx-menu' id="menuIcon"></i>
+        </div>
+  
+        <nav class="navbar-mine tetap">
+          <a href="index.html">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="judul-publish">
+        <h1 class="title publish-title">Let's Be a Writer</h1>
+        <p>
+          There are already more than 60 authors who have trusted us to publish their work. Be one of them by fulfilling the applicable terms and conditions.
+        </p>
+    </section>
+
+    <section class="ketentuan">
+        <div class="ketentuan-terbit">
+            <h1 class="title title2">Terms and Conditions</h1>
+            <ol>
+                <li>The manuscript you send must be 100 to 200 pages long.</li>
+                <li>If you send a manuscript for a children's book, especially a serial book manuscript, complete the manuscript with illustrations and a story concept.</li>
+                <li>The manuscript is typed in 12 pt font size and 1.5 spacing.</li>
+                <li>You can write a script with any theme as long as it doesn't offend SARA and isn't vulgar.</li>
+                <li>Include a story summary/synopsis about the script you wrote.</li>
+                <li>Don't forget to include the type of manuscript you are writing (fiction, nonfiction, juvenile, etc.)</li>
+            </ol>
+
+            <img src="assets/app/Group 6.png" alt="" width="450px">
+        </div>
+        <div class="publish">
+            <h1 class="title title2">Publish Here</h1>
+            <form action="">
+                <label for="nama">Writer's Name</label>
+                <input type="text" placeholder="Sergine Ardelina" id="nama" required>
+
+                <label for="email">Writer's Email</label>
+                <input type="email" name="email" placeholder="example@mail.com" id="email" required>
+
+                <label for="ratee">Rating</label>
+                <div class="rating" id="ratee">
+                    <div class="rating1"><input type="checkbox" id="rate"> <label for="rate">All ages</label></div>
+                    <div class="rating1"><input type="checkbox" id="rate"> <label for="rate">Oldster</label></div>
+                    <div class="rating1"><input type="checkbox" id="rate"> <label for="rate">Adults</label></div>
+                    <div class="rating1"><input type="checkbox" id="rate"> <label for="rate">Teenager</label></div>
+                    <div class="rating1"><input type="checkbox" id="rate"> <label for="rate">Childern</label></div>
+                </div>
+
+                <label for="judul">Title of the Book</label>
+                <input type="text" id="judul" placeholder="Under the Shine of The Stars" required>
+
+                <label for="upload">Upload Your Work</label>
+                <input type="file" id="upload" required>
+
+                <div class="pilih">
+                    <label for="book">Kind of Book</label>
+                    <select id="book" required>
+                        <option>Novel</option>
+                        <option>Fairytale</option>
+                        <option>Encyclopedia</option>
+                        <option>Collection of Literature</option>
+                        <option>Motivation</option>
+                    </select>
+                </div>
+
+                <label for="desc">Description of the Book</label>
+                <textarea id="desc" cols="30" rows="10" placeholder="And also add synopsis" required></textarea>
+
+                <label for="key">Keywords</label>
+                <input type="text" id="key">
+                <div class="setuju" >
+                    <input type="checkbox" id="setuju" required><label for="setuju">I agree to the conditions that apply to each publication. If in the future I find a violation, I am ready to take responsibility.</label>                    
+                </div>
+                <button type="submit" class="button" onclick="hai()">Sumbit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>
