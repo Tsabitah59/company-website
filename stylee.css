@@ -486,6 +486,12 @@ nav{
     flex-direction: column;
 }
 
+footer{
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+}
+
 /* Ketentuan */
 .judul-publish{
     background: url(assets/Picture/bggb.png);
